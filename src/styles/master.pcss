@@ -1,0 +1,20 @@
+@tailwind base;
+
+h1 {
+	letter-spacing: 10px;
+	small {
+		color: green !important;
+	}
+}
+
+.toggle-checkbox:checked {
+	right: 0;
+	border-color: rgba(31, 41, 55, 1);
+}
+.toggle-checkbox:checked + .toggle-label {
+	background-color: rgba(31, 41, 55, 1);
+}
+
+@tailwind components;
+
+@tailwind utilities;

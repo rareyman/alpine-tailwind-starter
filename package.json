@@ -1,0 +1,30 @@
+{
+	"name": "alpine-tailwind-starter",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"start": "eleventy --serve & postcss src/styles/master.pcss --o _tmp/style.css --watch",
+		"build": "ELEVENTY_PRODUCTION=true eleventy & NODE_ENV=production postcss src/styles/master.pcss --o _site/css/master.css"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"devDependencies": {
+		"@11ty/eleventy": "^0.11.1",
+		"alpinejs": "^2.7.3",
+		"eslint-config-prettier": "^6.15.0",
+		"eslint-plugin-html": "^6.1.1",
+		"eslint-plugin-prettier": "^3.1.4",
+		"html-minifier": "^4.0.0",
+		"postcss-clean": "^1.1.0",
+		"postcss-cli": "^8.3.0",
+		"postcss-nested": "^5.0.1",
+		"precss": "^4.0.0",
+		"prettier": "^2.2.1",
+		"stylelint": "^13.8.0",
+		"stylelint-config-idiomatic-order": "^8.1.0",
+		"stylelint-order": "^4.1.0",
+		"tailwindcss": "^2.0.1"
+	}
+}

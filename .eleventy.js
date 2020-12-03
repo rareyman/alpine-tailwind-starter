@@ -19,6 +19,9 @@ module.exports = function (eleventyConfig) {
 	eleventyConfig.addShortcode('version', function () {
 		return String(Date.now())
 	})
+	eleventyConfig.addShortcode('script', function (script) {
+		return `${script}`
+	})
 
 	eleventyConfig.addTransform('htmlmin', function (content, outputPath) {
 		if (
